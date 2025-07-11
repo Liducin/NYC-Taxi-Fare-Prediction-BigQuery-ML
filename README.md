@@ -52,21 +52,24 @@ The objective is to predict taxi fare amounts based on trip details (pickup/drop
 - Sample Predictions:
 
 - Model type: Boosted Tree Regressor
-- RMSE: 
-- R² Score:
-- Sample Predictions:
+- RMSE: .16
+- R² Score: .932
+- Sample Predictions: 
 
 ---
 
 ## Next Steps
-- Improve feature engineering (e.g., time of day, zones)
-- Compare model performance with boosted trees
+- Improve feature engineering
+- Add weight loss function to penalize underprediction of high fares
+- Add traffic/time of day features such as rush hour
 - Deploy predictions via Cloud Functions or Looker Studio
+- Use neural net models outside of BigQuery (TensorFlow, XGBoost)
 
 ---
 
 ## Folder Structure
 
-- /sql → SQL scripts for cleaning, modeling, evaluation, and testing
+- /sql → SQL scripts for cleaning, modeling, evaluation, and testing broken into folders for each model created.
 - /assets → Screenshots or diagrams
 README.md → This file
+
