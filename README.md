@@ -1,6 +1,6 @@
 # NYC Taxi Fare Prediction using BigQuery ML
 
-This project uses NYC taxi trip data to build and evaluate a fare prediction model using BigQuery ML. It demonstrates how to ingest, clean, and analyze large datasets on Google Cloud Platform and apply machine learning directly in BigQuery.
+This project uses NYC taxi trip data to build and evaluate a fare prediction model using BigQuery ML. It demonstrates how to ingest, clean, and analyze large datasets on Google Cloud Platform and apply machine learning directly in BigQuery. It also includes troubleshooting and noting the importance of testing your model before using the results.f
 
 ---
 
@@ -10,11 +10,12 @@ This project uses NYC taxi trip data to build and evaluate a fare prediction mod
 - BigQuery ML
 - Cloud Storage
 - SQL
+- Troubleshooting
 
 ---
 
 ## Objective
-To predict taxi fare amounts based on trip details (pickup/dropoff location, trip distance, passenger count, etc.) using historical NYC taxi data and BigQuery ML's linear regression.
+The objective is to predict taxi fare amounts based on trip details (pickup/dropoff location, trip distance, passenger count, etc.) using historical NYC taxi data and BigQuery ML.
 
 ---
 
@@ -34,14 +35,26 @@ To predict taxi fare amounts based on trip details (pickup/dropoff location, tri
 3. Created a linear regression model in BigQuery ML
 4. Evaluated model using RMSE and R² metrics
 5. Queried and visualized prediction outputs
+6. Repeat for boosted tree regressor model in BigQuery ML due to large error with linear regression
+7. Repeat again after optimizing to accomodate JFK flat rate fares and long distance trips.
 
 ---
 
 ## Results
 - Model type: Linear Regression
-- RMSE: `XX.XX` (to be filled)
-- R² Score: `XX.XX` (to be filled)
-- Sample Predictions: [insert screenshot or table if available]
+- RMSE: 26.47
+- R² Score: .9074
+- Sample Predictions: 
+
+- Model type: Boosted Tree Regressor
+- RMSE: 
+- R² Score:
+- Sample Predictions:
+
+- Model type: Boosted Tree Regressor
+- RMSE: 
+- R² Score:
+- Sample Predictions:
 
 ---
 
@@ -54,6 +67,6 @@ To predict taxi fare amounts based on trip details (pickup/dropoff location, tri
 
 ## Folder Structure
 
-- /sql → SQL scripts for cleaning, modeling, and evaluation
+- /sql → SQL scripts for cleaning, modeling, evaluation, and testing
 - /assets → Screenshots or diagrams
 README.md → This file
