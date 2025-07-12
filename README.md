@@ -47,11 +47,11 @@ The objective is to predict taxi fare amounts based on trip details (pickup/drop
 - Sample Predictions: 
 
 - Model type: Boosted Tree Regressor
-- RMSE: 
-- R² Score:
+- RMSE: .02603
+- R² Score: .9304
 - Sample Predictions:
 
-- Model type: Boosted Tree Regressor
+- Model type: Boosted Tree Regressor (Optimized)
 - RMSE: .16
 - R² Score: .932
 - Sample Predictions: 
@@ -69,7 +69,7 @@ The objective is to predict taxi fare amounts based on trip details (pickup/drop
 
 ## Folder Structure
 
-- /sql → SQL scripts for cleaning, modeling, evaluation, and testing broken into folders for each model created.
+- /sql → SQL scripts for cleaning, modeling, evaluation, and testing, broken into folders for each model created.
 - /assets → Screenshots or diagrams
 README.md → This file
 
