@@ -46,10 +46,14 @@ The objective is to predict taxi fare amounts based on trip details (pickup/drop
 - R² Score: .9074
 - Sample Predictions: 
 
+_______________________________________________________
+
 - Model type: Boosted Tree Regressor
 - RMSE: .02603
 - R² Score: .9304
 - Sample Predictions:
+
+_______________________________________________________
 
 - Model type: Boosted Tree Regressor (Optimized)
 - RMSE: .16
